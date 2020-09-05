@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Sign up</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</head>
+<body class="d-flex align-items-center">
+	<div class="container">
+		<div id="signup-success" style="display: none;">
+			<p class="text-center">Thanks, we'll let you know when we're ready for launch!</p>
+		</div>
+		<form id="signup" action="https://api.sheety.co/phill/lily/emails">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<h1 class="text-center">Get notified</h1>
+					<p class="lead text-center">Be the first to know when we're out of stealth mode.</p>
+					<hr class="mb-0">
+					<div class="row">
+						<div class="col-md mt-3">
+							<input placeholder="Your name" type="text" class="form-control" id="name" required>
+						</div>
+						<div class="col-md mt-3">
+							<input placeholder="Email address" type="email" class="form-control" id="email" required>
+						</div>
+					</div>
+					<hr class="mt-3 mb-3">
+					<input type="submit" class="btn btn-primary btn-lg btn-block" value="Register interest">
+					<small class="text-muted text-center mt-3 d-block">By signing up you agree to receive occasional updates from us.</small>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
